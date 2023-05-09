@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn C++</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			
+	<nav>
+		<label class="logo">CODEGENE</label>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="#">COURSES</a>
+				<ul>
+					<li><a href="c.html">ANSI C</a></li>
+					<li><a href="c++.html">C++</a></li>
+					<li><a href="java.html">JAVA</a></li>
+				</ul>
+			<li><a href="aboutus.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		
+	</nav>
+	</div>
+	</header>
+	<h2>What is C++?</h2>
+	<p>
+		<pre>
+			<ul>
+<li>C++ is a cross-platformed language that can be used to create sophisticated high-performance applications.</li>
+
+<li>C++ was developed by Bjarne Stroustrup at Bell labs in 1979, as an extension to the C language.</li>
+
+<li>C++ gives programmers a high level of control over system resources and memory.</li>
+
+<li>The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</li>
+</ul></pre></p>
+<h2>Why Use C++</h2>
+<p><pre>
+	<ul>
+<li>C++ is one of the world's most popular programming languages.</li>
+
+<li>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</li>
+
+<li>C++ is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs.</li>
+
+<li>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</li>
+
+<li>C++ is fun and easy to learn!</li>
+
+<li>As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa</li>
+</ul>
+</pre></p>
+<h2>C++ Get Started</h2>
+<p><pre>
+To start using C++, you need two things:
+<ul>
+<li>A text editor, like Notepad, to write C++ code</li>
+<li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+</ul>
+There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
+</pre></p>
+<h2>C++ Install IDE</h2>
+<p><pre>
+An IDE (Integrated Development Environment) is used to edit AND compile the code.
+
+Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code.
+
+<b>Note:</b> Web-based IDE's can work as well, but functionality is limited.
+
+We will use <b>Code::Blocks</b> in our tutorial, which we believe is a good place to start.
+
+You can find the latest version of Codeblocks at <a href="http://www.codeblocks.org/downloads/26">http://www.codeblocks.org/downloads/26</a>. Download the mingw-setup.exe file, which will install the text editor with a compiler.
+</pre></p>
+<h2>C++ Quickstart</h2>
+<p><pre>
+Let's create our first C++ file.
+
+Open Codeblocks and go to <b>File > New > Empty File.</b>
+
+Write the following C++ code and save the file as myfirstprogram.cpp <b>(File > Save File as)</b>:
+
+myfirstprogram.cpp
+<div class="trycode">
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+</div>
+Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.
+
+In Codeblocks, it should look like this:
+<img src="images\codeblocks2.png">
+Then, go to Build > Build and Run to run (execute) the program. The result will look something to this:
+<div class="trycode">
+Hello World!
+Process returned 0 (0x0) execution time : 0.011 s
+Press any key to continue.
+</div>
+<b>Congratulations!</b> You have now written and executed your first C++ program.
+</pre></p>
+<h2>C++ Syntax</h2>
+<p><pre>
+Let's break up the following code to understand it better:
+
+Example
+<div class="trycode>">
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+</div>
+</pre></p>
+<h2>Example explained</h2>
+<p><pre>
+Line 1: #include <iostream> is a header file library that lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to C++ programs.
+
+Line 2: using namespace std means that we can use names for objects and variables from the standard library.
+
+Don't worry if you don't understand how #include <iostream> and using namespace std works. Just think of it as something that (almost) always appears in your program.
+
+Line 3: A blank line. C++ ignores white space.
+
+Line 4: Another thing that always appear in a C++ program, is int main(). This is called a function. Any code inside its curly brackets {} will be executed.
+
+Line 5: cout (pronounced "see-out") is an object used to output/print text. In our example it will output "Hello World".
+
+Note: Every C++ statement ends with a semicolon ;.
+
+Note: The body of int main() could also been written as:
+int main () { cout << "Hello World! "; return 0; }
+
+Remember: The compiler ignores white spaces. However, multiple lines makes the code more readable.
+
+Line 6: return 0 ends the main function.
+</pre></p>
+<h2>Omitting Namespace</h2>
+<p><pre>
+You might see some C++ programs that runs without the standard namespace library. The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects:
+
+Example
+<div class="trycode">
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+</div>
+It is up to you if you want to include the standard namespace library or not.
+</pre>
+</p>
+</body>
+</html>
